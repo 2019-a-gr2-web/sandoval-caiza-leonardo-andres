@@ -1,4 +1,6 @@
+
 import {Controller, Delete, Get, HttpCode, Post, Put, Headers} from '@nestjs/common';
+
 import { AppService } from './app.service';
 
 //http://192.168.1.10:3000/segmentoInicial
@@ -91,6 +93,7 @@ class usuario{
 
 }
 */
+
 
 const json=[
   {
