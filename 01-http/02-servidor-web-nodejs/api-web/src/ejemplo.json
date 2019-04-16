@@ -1,0 +1,20 @@
+[
+  {
+  "llave": "valor",
+  "key": "value",
+  "nombre":"Leonardo",
+  "edad":23,
+  "sueldo":10.21,
+  "casado": false,
+  "hijos": null,
+  "mascotas": ["cachetas",
+    1,
+    23.2,
+    false,
+    null
+    {
+      "nombre": "cachetas"
+    }
+  ]
+}
+]
