@@ -1,7 +1,9 @@
 
-import {Controller, Delete, Get, HttpCode, Post, Put, Headers} from '@nestjs/common';
+import {Controller, Delete, Get, HttpCode, Post, Put, Headers,Param,Request, Response} from '@nestjs/common';
 
 import { AppService } from './app.service';
+import {Body} from "@nestjs/common/decorators/http/route-params.decorator";
+
 
 //http://192.168.1.10:3000/segmentoInicial
 //http://192.168.1.10:3000/mascotas/crear
@@ -35,8 +37,10 @@ export class AppController {
 
   @Get('/adivina')// METODO HTTP
   adivina(@Headers() headers): string {
-    console.log('Headers: ',headers);
-    const numeroRandomico=Math.round(Math.random()*10);
+    console.log('Headers: ', headers);
+    const numeroRandomico = Math.round(Math.random() * 10);
+
+
 
 /*
     //js->ts
@@ -55,6 +59,49 @@ export class AppController {
     }
 
     return 'Ok';
+  }
+
+  @Get('/ciudad/:idCiudad')
+  ciudad(@Param() parametrosRuta){
+    switch(parametrosRuta.idCiudad.toLowerCase()){
+      case 'quito':
+        return 'Que fueff';
+      case 'guayaquil':
+        return 'Que mah ñaños';
+      default:
+        return 'Buenas tardes';
+
+    }
+  }
+
+  @Post('/registroComida')
+  registroComida(@Body() parametrosCuerpo,
+                 @Response() response) {
+    if (parametrosCuerpo.nombre && parametrosCuerpo.cantidad) {
+      const cantidad = Number(parametrosCuerpo.cantidad);
+      if (cantidad > 1) {
+        response.set('Premio', 'Guatita');
+        return response.send({mensaje: 'Registro Creado'});
+      } else {
+        return response.status(400)
+            .send({mensaje: 'Erro, no envia nombre o cantidad', error: 400});
+      }
+
+
+    }
+  }
+
+  @Get('/semilla')
+  semilla(@Request() request){
+    console.log(request.cookies);
+    const noHayCookies=!request.cookies;
+    const cookies=request.cookies;
+    if(cookies.micookie){
+      return 'ok'
+    }else{
+      return ':('
+    }
+
   }
 
   /*
