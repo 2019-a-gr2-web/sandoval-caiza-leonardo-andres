@@ -8,7 +8,7 @@ const cookieParser=require('cookie-parser');
 //Para modificar el puerto
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.use(cookieParser());
+  app.use(cookieParser('secreto'));
   await app.listen(3000);
 }
 bootstrap();
