@@ -16,6 +16,7 @@ export class AppController {
   @HttpCode(200)
 
   nombreUsuario(@Request() request, @Response() response) {
+    console.log(request.cookies);
     const cookies = request.cookies;
     const esquemaValidacionNombre = Joi
         .object()
@@ -26,17 +27,23 @@ export class AppController {
     const objetoValidacion = Joi.validate({
     }, esquemaValidacionNombre);
 
+      if(objetoValidacion.error){
+          console.log('Resultado: ', objetoValidacion);
+      }else{
+          console.log('Numero valido');
+      }
+
     if (objetoValidacion.error) {
       response.status(400).send({error: 'El nombre de usuario debe ser alfanumerico, minimo 5 caracteres'});
     } else {
       const usuario = 'leonardo';
 
-      if (!cookies[usuario]) {
-        response.cookie(usuario, 5);
-        response.send({nombreUsuario: usuario, resultado: 5});
-      } else {
+     // if (!cookies[usuario]) {
+        response.cookie(usuario, 2);
+        response.send({nombreUsuario: usuario, resultado: 1});
+      //} else {
         return response.send({mensaje: 'Cookie creada :)'});
-      }
+      //}
     }
   }
 }
