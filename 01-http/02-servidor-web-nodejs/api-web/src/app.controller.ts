@@ -145,6 +145,13 @@ export class AppController {
     }
   }
 
+  @Get('inicio')
+    inicio(
+      @Response() res
+  ){
+    return res.render('inicio')
+  }
+
 
 
   /*
@@ -222,3 +229,128 @@ objeto['propiedadTres']='valor3';
 delete objeto.propiedadTres; //->destruir
 objeto.propiedadTres=undefined;
 //Eliminar una propiedad
+
+
+//variables ? const, let, var
+//tipos de datos String, number, boolean
+
+function holaMundo() {
+  console.log('Hola mundo')
+}
+
+const respuestaHolaMundo=holaMundo();
+console.log('Resp hola mundo: ', respuestaHolaMundo);
+
+function suma(a,b) {
+  return a+b;
+}
+const respuestaSuma=suma(3,6);
+console.log('Respuesta suma: ',respuestaSuma)
+
+//condicionales
+//valores Truty -> true
+// Falsy -> false
+
+if(true){ //Truty
+  console.log('verdadero');
+}else{  //Flasy
+  console.log('falso');
+}
+
+if({}){
+  console.log('Verdadero ""');
+}else{
+  console.log('Falso ""');
+}
+
+//Operadores de arreglos JS
+
+let arreglo=[
+    function () {return '0'},
+    1,'a',true,null,[],{}];
+
+const arregloNumero=[1,2,3,4,5,6];
+//1) Impriman en consola todos los elementos
+
+const arregloNumerosForEach=[1,2,3,4,5,6];
+
+arregloNumerosForEach
+    .forEach(
+        function(valorActual, indice, arreglo) {
+          console.log(`Valor: ${valorActual}`);
+          console.log(`Indice: ${indice}`);
+          console.log(`Arreglo: ${arreglo}`);
+      }
+    );
+
+
+const rForEach=arregloNumerosForEach
+    .forEach(
+        function(valorActual) {
+          console.log(`Valor: ${valorActual}`);
+        }
+    );
+console.log(`Respuesta FOREACH: ${rForEach}`);
+
+
+const r2ForEach=arregloNumerosForEach
+    .forEach(
+        n=> console.log(`${n}`));
+
+
+//2) Sumen 2 alos pares y 1 a los impares
+
+const arregloNumerosMap=[1,2,3,4,5,6];
+const rMap=arregloNumerosMap
+    .map( //Devolver nuevo VALOR de ese elemento
+        (valorActual)=>{
+
+          const esPar=valorActual%2==0;
+          if(esPar){
+            return valorActual+2;
+          }else{
+            return valorActual+1;
+          }
+
+        }
+    );
+
+console.log(`Respuesta MAP: ${rMap}`);
+
+//3) Encuentren si hay el numero4
+
+const arregloNumerosFind=[1,2,3,4,5,6];
+const rFind = arregloNumerosFind
+    .find(//condicion
+        (valorActual)=>{
+            return valorActual==4;
+            //return valorActual.apellido=='Sandoval'
+        }
+    );
+
+console.log(`Respuesta MAP: ${rFind}`);
+
+//4) Filtren los numeros menores a 5
+
+const arregloNumerosFilter=[1,2,3,4,5,6];
+
+const rFilter=arregloNumerosFilter
+    .filter( // nos va a devolver un nuevo arreglo filtrado
+            //condicion TURE -> agrega al arreglo
+            //condicion FALSA -> se omite el arreglo
+        (valorActual)=>{
+            return valorActual<5;
+        }
+    );
+
+console.log(`Respuesta MAP: ${rFilter}`);
+
+//5) TODOS los valores positivos
+//6) ALGUN valor es menor que 2
+//7) Sumen todos los valores
+//8) Resten todos los valores de 100
+
+//1.1) Sumen 10 a todos
+//1.2) Filtren a los mayores a 15
+//1.3) Si hay algun numero mayor a 30
+
