@@ -346,11 +346,110 @@ const rFilter=arregloNumerosFilter
 console.log(`Respuesta MAP: ${rFilter}`);
 
 //5) TODOS los valores positivos
+
+const arregloNumerosEvery=[1,2,3,4,5,6];
+const respuestaEvery = arregloNumerosEvery // operador logico AND
+    .every( //si todos cumplen TRUE
+            // si alguno no cumplen FALSE
+        (valorActual)=>{
+            return valorActual>0
+        }
+    );
+console.log(`Respuesta Every ${respuestaEvery}`);
+
 //6) ALGUN valor es menor que 2
+
+const arregloNumerosSome=[1,2,3,4,5,6];
+
+const respuestaSome = arregloNumerosEvery
+    .some( //si todos cumplen TRUE
+        // si alguno no cumplen FALSE
+        (valorActual)=>{
+          return valorActual<2
+        }
+    );
+console.log(`Respuesta Some ${respuestaSome}`);
+
+
 //7) Sumen todos los valores
+
+const arregloNumerosReduce=[1,2,3,4,5,6];
+const valorDondeEmpiezaCalculo=0;
+
+const respuestaReduce = arregloNumerosReduce
+    .reduce(
+        (acumulado, valorActual)=>{
+          return acumulado+valorActual;
+        },
+        valorDondeEmpiezaCalculo
+);
+console.log(`Respuesta Reduce ${respuestaReduce}`);
+
+
+//  si es el numero es <4  ==> 10%+5
+//  si es el numero es >=4 ==> 15%+3
+//reduce write para empezar por la izquierda
+
+const arregloNumerosReduce2=[1,2,3,4,5,6];
+const valorDondeEmpiezaCalculo2=0;
+
+const respuestaReduce2 = arregloNumerosReduce
+    .reduce(
+        (acumulado, valorActual)=>{
+          if(valorActual<4) {
+            return acumulado+valorActual*1.1+5;
+
+          }else{
+            return acumulado+valorActual*1.5+3;
+
+          }
+        },
+        valorDondeEmpiezaCalculo2
+    );
+console.log(`Respuesta Reduce ${respuestaReduce2}`);
+
+
 //8) Resten todos los valores de 100
 
+const arregloNumerosReduce3=[1,2,3,4,5,6];
+const valorDondeEmpiezaCalculo3=100;
+
+
+const respuestaReduce3 = arregloNumerosReduce
+    .reduce(
+        (acumulado, valorActual)=>{
+          return acumulado-valorActual;
+        },
+        valorDondeEmpiezaCalculo3
+    );
+console.log(`Respuesta Reduce ${respuestaReduce3}`);
+
+
 //1.1) Sumen 10 a todos
+
+const arregloEjercicio=[1,2,3,4,5,6];
+
+const respuestaEjercicio=arregloEjercicio
+    .map(
+        (valorActual)=>{
+          return valorActual+10;
+    })
+    .filter(
+        (valorActual)=>{
+          return valorActual >15;
+        }
+    )
+    .some(
+    (valorActual)=>{
+    return valorActual <30;
+})
+
+console.log(`Respuesta Ejercicio ${respuestaEjercicio}`);
+
 //1.2) Filtren a los mayores a 15
+
+
+
+
 //1.3) Si hay algun numero mayor a 30
 
