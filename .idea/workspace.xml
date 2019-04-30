@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ceb425ec-8fdf-4221-86dc-c2b8d7fa2ed4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deberes/01-calculadora/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Deberes/01-calculadora/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deberes/02-cookie-insegura/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Deberes/02-cookie-insegura/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deberes/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deberes/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deberes/02-cookie-segura/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Deberes/02-cookie-segura/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deberes/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Deberes/package-lock.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,25 +22,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Deberes/02-cookie-segura/src/main.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Deberes/02-cookie-segura/src/app.controller.ts">
+        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="234" column="29" selection-start-line="234" selection-start-column="29" selection-end-line="234" selection-end-column="29" />
+            <state relative-caret-position="293">
+              <caret line="443" column="4" selection-start-line="443" selection-start-column="4" selection-end-line="443" selection-end-column="4" />
               <folding>
-                <element signature="e#0#117#0" expanded="true" />
+                <element signature="e#1#110#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,10 +65,10 @@
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/view/inicio.ejs" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/main.ts" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/inicio.ejs" />
-        <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/Deberes/02-cookie-segura/src/main.ts" />
         <option value="$PROJECT_DIR$/Deberes/02-cookie-insegura/src/main.ts" />
         <option value="$PROJECT_DIR$/Deberes/02-cookie-segura/src/app.controller.ts" />
+        <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts" />
       </list>
     </option>
   </component>
@@ -107,19 +98,22 @@
             <path>
               <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="Deberes" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="Deberes" type="462c0819:PsiDirectoryNode" />
-              <item name="02-cookie-segura" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="api-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="Deberes" type="462c0819:PsiDirectoryNode" />
-              <item name="02-cookie-segura" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="api-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -175,12 +169,13 @@
       <workItem from="1556598873365" duration="1558000" />
       <workItem from="1556629929615" duration="421000" />
       <workItem from="1556630416449" duration="6772000" />
-      <workItem from="1556638469746" duration="3725000" />
+      <workItem from="1556638469746" duration="5411000" />
+      <workItem from="1556651547423" duration="5532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55830000" />
+    <option name="totallyTimeSpent" value="63048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -198,7 +193,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29951692" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28663447" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -332,13 +327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Deberes/02-cookie-insegura/src/main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -346,13 +334,6 @@
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -365,17 +346,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Deberes/02-cookie-segura/src/app.controller.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-51">
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Deberes/02-cookie-segura/src/main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
@@ -384,10 +375,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Deberes/02-cookie-segura/src/app.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="234" column="29" selection-start-line="234" selection-start-column="29" selection-end-line="234" selection-end-column="29" />
+        <state relative-caret-position="-2860">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
           <folding>
             <element signature="e#0#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="443" column="4" selection-start-line="443" selection-start-column="4" selection-end-line="443" selection-end-column="4" />
+          <folding>
+            <element signature="e#1#110#0" expanded="true" />
           </folding>
         </state>
       </provider>
