@@ -6,6 +6,10 @@ import {NestExpressApplication} from "@nestjs/platform-express";
 //import * as cookieParser from 'cookie-parser';
 //importar cookie JS
 const cookieParser=require('cookie-parser');
+import *as express from 'express';
+
+import * as path from 'path';
+import * as favicon from 'serve-favicon'
 
 //Para modificar el puerto
 async function bootstrap() {
@@ -13,9 +17,13 @@ async function bootstrap() {
       .create(AppModule)as NestExpressApplication;
   app.use(cookieParser('secreto'));
 
+    app.use(favicon(path.join(__dirname, '..','publico', 'imagenes','leon.ico')))
+
+
 
   app.setViewEngine('ejs');
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
+  app.use(express.static('publico'))
 
   await app.listen(3000);
 }

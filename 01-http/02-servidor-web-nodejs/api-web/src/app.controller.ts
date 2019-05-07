@@ -149,8 +149,23 @@ export class AppController {
     inicio(
       @Response() res
   ){
-    return res.render('inicio')
+    return res.render(
+        'inicio',
+        {
+        estaVivo:false
+        });
   }
+
+    @Get('peliculas')
+    peliculas(
+        @Response() res
+    ){
+        return res.render(
+            'peliculas/inicio',
+            {
+                estaVivo:false
+            });
+    }
 
 
 
