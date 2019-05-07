@@ -7,7 +7,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get('/hello-world')// METODO HTTP
-  helloHello(): string {
+  getHello(): string {
     return 'Hello World';
   }
 
@@ -15,8 +15,8 @@ export class AppController {
   @HttpCode(200)
   suma(@Headers() headers,  @Request() req, @Response() res){
     const cookies=req.cookies;
-    const cookiesSeg=req.signedCookies;
-    if(!cookiesSeg.puntos){
+    const cookiesSeg2=req.signedCookies;
+    if(!cookiesSeg2.puntos){
       res.cookie('puntos', '100',{signed:true});
     }
 
@@ -46,14 +46,14 @@ export class AppController {
         return res.send(`Resultado: ${resultado.error}`);
       }else{
         const totalSuma=numero1+numero2;
-        const puntosRes=cookiesSeg.puntos-totalSuma;
-        cookiesSeg.puntos=puntosRes;
+        const puntosRes=cookiesSeg2.puntos-totalSuma;
+      //  cookiesSeg.puntos=puntosRes;
 
-        if(cookiesSeg.puntos) {
+        if(cookiesSeg2.puntos) {
           res.cookie('puntos', puntosRes, {signed: true});
         }
 
-        if (cookiesSeg.puntos <=0) {
+        if (cookiesSeg2.puntos <=0) {
           return res.status(201).send({
             'usuario: ': `${cookies.usuario}`,
             'resultado: ': `${totalSuma}`,
@@ -63,7 +63,7 @@ export class AppController {
           return res.status(200).send({
             'usuario: ': `${cookies.usuario}`,
             'resultado: ': `${totalSuma}`,
-            'intentos restantes: ': `Puntos restantes: ${cookiesSeg.puntos}`
+            'intentos restantes: ': `Puntos restantes: ${cookiesSeg2.puntos}`
           });
         }
       }
