@@ -145,7 +145,7 @@ export class AppController {
     }
   }
 
-  @Get('inicio')
+  @Get('inicio')//end point
     inicio(
       @Response() res
   ){
@@ -167,6 +167,13 @@ export class AppController {
             });
     }
 
+    @Get('estilos')//end point
+    estilos(
+        @Response() res
+    ){
+        return res.render(
+            'estilos/inicio');
+    }
 
 
   /*
