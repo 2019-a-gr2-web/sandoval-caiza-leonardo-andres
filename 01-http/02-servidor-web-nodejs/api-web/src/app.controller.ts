@@ -152,7 +152,7 @@ export class AppController {
     return res.render(
         'inicio',
         {
-        estaVivo:false
+        estaVivo:true
         });
   }
 
