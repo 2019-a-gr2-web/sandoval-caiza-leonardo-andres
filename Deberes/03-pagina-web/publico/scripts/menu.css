@@ -1,0 +1,59 @@
+.chromestyle{
+width: 100%;
+font-weight: bold;
+}
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.chromestyle ul{
+border: 0px solid #BBB;
+width: 100%;
+background: url(http://www.ecuagol.com/ecuagol/jsscripts/images/menuup.png) center center repeat-x; /*THEME CHANGE HERE*/
+padding: 8px 0;
+margin: 0px 0;
+text-align: left; /*set value to "left", "center", or "right"*/
+}
+
+.chromestyle ul li{
+display: inline;
+}
+
+.chromestyle ul li a{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #FFFFFF;
+padding: 10px 7px;
+margin: 0;
+text-decoration: none;
+border-right: 1px solid #DADADA;
+}
+
+.chromestyle ul li a:hover{ /*script dynamically adds a class of "selected" to the current active menu item*/
+background: url(http://www.ecuagol.com/ecuagol/jsscripts/images/menusel.png) center center repeat-x; /*THEME CHANGE HERE*/
+}
+
+.chromestyle ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
+background: url(http://www.ecuagol.com/ecuagol/jsscripts/images/menudown.png) center center repeat-x; /*THEME CHANGE HERE*/
+}
+
+.submenuitem {
+	display:table;
+	color:#FFFFFF;
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	height: 40px;
+	text-align: center;
+}.submenuitem:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #D62923), color-stop(1, #9D1D1A) );
+	background:-moz-linear-gradient( center top, #D62923 5%, #9D1D1A 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#D62923', endColorstr='#9D1D1A');
+	background-color:#D32A27;
+}
