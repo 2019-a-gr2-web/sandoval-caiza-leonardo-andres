@@ -1,46 +1,68 @@
-import {Injectable, Module} from "@nestjs/common";
+import {Injectable} from "@nestjs/common";
 import {Trago} from "./interfaces/trago";
 
 @Injectable()
-export class TragosService{
+export class TragosService {
 
-    bddTragos:Trago[] = [];
-    recnum=1;
+    constructor(){
+        const traguito:Trago = {
+            nombre: 'Pilsener',
+            gradosAlcohol: 4.3,
+            fechaCaducidad: new Date(2019,5,10),
+            precio: 1.75,
+            tipo:'Cerveza'
+        };
+        this.crear(traguito);
+    }
 
-    crear(nuevoTrago: Trago){
-        nuevoTrago.id=this.recnum;
+
+    bddTragos: Trago[] = [];
+    recnum = 1;
+
+    crear(nuevoTrago: Trago):Trago {
+        nuevoTrago.id = this.recnum;
         this.recnum++;
         this.bddTragos.push(nuevoTrago);
         return nuevoTrago;
     }
 
-    buscarPorID(id:number) {
-        this.bddTragos.find(
+    buscarPorId(id: number):Trago {
+        return this.bddTragos.find(
             (trago) => {
                 return trago.id === id;
             }
         );
     }
 
-    eliminarPorId(nuevoTrago: Trago){
+    buscarPorNombre(nombre: string):Trago {
+        return this.bddTragos.find(
+            (trago) => {
+                return trago.nombre.toUpperCase().includes(nombre.toUpperCase());
+            }
+        );
+    }
+
+    eliminarPorId(id: number):Trago[] {
         const indice = this.bddTragos.findIndex(
-            (trago)=>{
-                return trago.id === id;
+            (trago) => {
+                return trago.id === id
             }
         );
         this.bddTragos.splice(indice,1);
         return this.bddTragos;
     }
 
-    actualizar(tragoActualizado: Trago, id:number){
+    actualizar(tragoActualizado: Trago, id:number):Trago[] {
 
         const indice = this.bddTragos.findIndex(
             (trago) => {
-                return trago.id === id;
+                return trago.id === id
             }
         );
-        tragoActualizado.id= this.bddTragos[indice].id;
-        //this.bddTragos[indice]=tragoActualizado;
+        tragoActualizado.id = this.bddTragos[indice].id;
+        this.bddTragos[indice] = tragoActualizado;
+
+        return this.bddTragos;
     }
 
 }
