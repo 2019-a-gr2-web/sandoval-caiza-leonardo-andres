@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .espacio{
+            height: 100px;
+        }
+        .cabecera{
+            padding-top:20px;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            background-color: #c0e0df;
+        }
+        .btn{
+            color: #060101;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border-bottom-color: #9D1D1A;
+            border-color: #0c0303;
+            background-color: #f3948e;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="col-sm-12">
+        <div class="cabecera row text-right">
+            <div class="col-sm-6">
+                <span class="text-sm-right"> <%=usuario%></span>
+            </div>
+            <div class="col-sm-6">
+                <a href="http://localhost:3000/examen/eliminarCookie">
+                    <button  type="button" class="btn btn-sm btn-primary">Salir</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="espacio"></div>
+    <div class="col-sm-12">
+        <form action="/examen/entrenador/gestion/buscar/<%=idPadre%>" class="form-horizontal" method="post">
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="busquedaId" placeholder="Busqueda" name="busqueda">
+                </div>
+
+                <div class="col-sm-2 text-right"><button type="submit" class="btn btn-sm btn-primary">buscar</button></div>
+            </div>
+
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <div class="form-group row text-right">
+            <div class="col-sm-12">
+
+                <a href="http://localhost:3000/examen/entrenador/gestion/crear/<%=idPadre%>">
+                    <button type="button" class="btn btn-sm btn-primary">Crear</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <table class="table table-md table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Poder 1</th>
+                    <th>Poder 2</th>
+                    <th>Fecha de Captura</th>
+                    <th>Nivel</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                <% listaPokemon.forEach((pokemon)=>{ %>
+                    <tr>
+                        <td><%= pokemon.nombrePokemon %></td>
+                        <td><%= pokemon.poderEspecialUno %></td>
+                        <td><%= pokemon.poderEspecialDos %></td>
+                        <td><%= pokemon.fechaCaptura %></td>
+                        <td><%= pokemon.nivel%> </td>
+                        <td>
+                            <form action="/examen/entrenador/gestion/eliminar/<%=pokemon.idPadre%>" method="post">
+                                <input type="text" name="idPokemon" hidden value="<%=pokemon.idPokemon%> ">
+                                <button type="submit" class="btn btn-xs btn-info">Borrar</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% })%>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="http://localhost:3000/examen/lista" class="btn btn-sm btn-primary" role="button">Regresar</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

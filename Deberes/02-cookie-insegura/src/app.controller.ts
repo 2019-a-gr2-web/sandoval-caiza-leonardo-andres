@@ -1,3 +1,4 @@
+// @ts-ignore
 import {Controller, Get, HttpCode, Headers, Response, Request, Query} from '@nestjs/common';
 import { AppService } from './app.service';
 import * as Joi from '@hapi/joi';
