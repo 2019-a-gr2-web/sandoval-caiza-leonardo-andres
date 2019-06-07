@@ -15,15 +15,6 @@ let PokemonService = class PokemonService {
         this.bddPokemon = [];
         this.bddTemp = [];
         this.numPokemon = 1;
-        const miPokemon = {
-            idPadre: 1,
-            nombrePokemon: 'Bulbasaur',
-            poderEspecialUno: 'Gallet',
-            poderEspecialDos: 'Pequeña',
-            fechaCaptura: new Date(2019, 6, 5),
-            nivel: 1
-        };
-        this.crear(miPokemon);
     }
     crear(nuevoPokemon) {
         nuevoPokemon.idPokemon = this.numPokemon;

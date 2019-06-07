@@ -58,10 +58,20 @@ export class AppController {
         usuario:req.signedCookies.usuario,
         listaEntrenador:listaEntrenador
       });
+    }else{
+      res.redirect('examen/login');
     }
+
   }
 
-
+  @Get('eliminarCookie')
+  eliminarCookie(
+      @Res() res,
+      @Req() req
+  ){
+    res.clearCookie('usuario');
+    res.redirect('/examen/login');
+  }
 
 
 }

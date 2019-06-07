@@ -42,6 +42,9 @@ let PokemonController = class PokemonController {
                 idPadre: req.params.idPadre
             });
         }
+        else {
+            res.redirect('examen/login');
+        }
     }
     crearPost(res, pokemon, req) {
         pokemon.idPadre = Number(req.params.idPadre);
@@ -61,6 +64,9 @@ let PokemonController = class PokemonController {
                 listaPokemon: listaPokemon,
                 idPadre: req.params.idPadre
             });
+        }
+        else {
+            res.redirect('examen/login');
         }
     }
 };

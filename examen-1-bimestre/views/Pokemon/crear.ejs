@@ -21,7 +21,15 @@
             margin: 0;
             font-family: Helvetica, Arial, sans-serif;
             overflow: hidden;
-            background-color: #ff9872;
+            background-color: #c0e0df;
+        }
+        .btn{
+            color: #060101;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border-bottom-color: #9D1D1A;
+            border-color: #0c0303;
+            background-color: #f3948e;
         }
     </style>
 </head>
@@ -33,7 +41,7 @@
                 <span class="text-sm-right"> <%=usuario%></span>
             </div>
             <div class="col-sm-6">
-                <a href="http://localhost:3000/examen/login">
+                <a href="http://localhost:3000/examen/eliminarCookie">
                     <button  type="button" class="btn btn-sm btn-primary">Salir</button>
                 </a>
             </div>
@@ -73,7 +81,7 @@
             </div>
             <div class="form-group row">
                 <label for="nivelId" class="control-label col-sm-2">Nivel:</label>
-                <div class="col-sm-5">
+                <div class="col-sm-10">
                     <input type="number" class="form-control" id="nivelId" name="nivel">
                 </div>
             </div>

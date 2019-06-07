@@ -38,14 +38,6 @@ export class EntrenadorService{
     }
 
     constructor(){
-        const miEntrenador:Entrenador = {
-            nombres:'Leonardo A',
-            apellidos:'Sandoval C',
-            fechaNacimiento:new Date(2019,8, 23),
-            numeroMedalla:1712138393,
-            campeonActual:true
 
-        };
-        this.crear(miEntrenador);
     }
 }

@@ -62,6 +62,8 @@ export class EntrenadorController{
                 usuario:req.signedCookies.usuario,
                 listaEntrenador:listaEntrenador
             });
+        }else{
+            res.redirect('examen/login');
         }
     }
 

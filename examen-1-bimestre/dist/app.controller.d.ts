@@ -8,4 +8,5 @@ export declare class AppController {
     login(res: any, req: any): void;
     ingresar(usuario: string, res: any): void;
     gestion(res: any, req: any): void;
+    eliminarCookie(res: any, req: any): void;
 }

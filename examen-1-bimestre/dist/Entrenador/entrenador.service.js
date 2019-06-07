@@ -14,14 +14,6 @@ let EntrenadorService = class EntrenadorService {
     constructor() {
         this.bddEntrenador = [];
         this.numEntrenador = 1;
-        const miEntrenador = {
-            nombres: 'Leonardo A',
-            apellidos: 'Sandoval C',
-            fechaNacimiento: new Date(2019, 8, 23),
-            numeroMedalla: 1712138393,
-            campeonActual: true
-        };
-        this.crear(miEntrenador);
     }
     crear(nuevoEntrenador) {
         nuevoEntrenador.entrenadorId = this.numEntrenador;

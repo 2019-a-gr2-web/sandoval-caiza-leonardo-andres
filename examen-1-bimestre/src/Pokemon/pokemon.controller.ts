@@ -45,6 +45,8 @@ export  class PokemonController {
                 usuario:req.signedCookies.usuario,
                 idPadre:req.params.idPadre
             });
+        }else{
+            res.redirect('examen/login');
         }
     }
 
@@ -77,6 +79,8 @@ export  class PokemonController {
                 listaPokemon:listaPokemon,
                 idPadre:req.params.idPadre
             });
+        }else{
+            res.redirect('examen/login');
         }
     }
 }

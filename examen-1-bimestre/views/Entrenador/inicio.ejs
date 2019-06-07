@@ -23,7 +23,15 @@
             margin: 0;
             font-family: Helvetica, Arial, sans-serif;
             overflow: hidden;
-            background-color: #ff9872;
+            background-color: #c0e0df;
+        }
+        .btn{
+            color: #060101;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border-bottom-color: #9D1D1A;
+            border-color: #0c0303;
+            background-color: #f3948e;
         }
     </style>
 
@@ -39,7 +47,7 @@
                 <span class="text-sm-right"> <%=usuario%></span>
             </div>
             <div class="col-sm-6">
-                <a href="http://localhost:3000/examen/login">
+                <a href="http://localhost:3000/examen/eliminarCookie">
                     <button  type="button" class="btn btn-sm btn-primary">Salir</button>
                 </a>
             </div>
@@ -78,7 +86,7 @@
                 <tr>
                     <th>Nombre</th>
                     <th>Apellido</th>
-                    <th>Fecha Apertura</th>
+                    <th>Fecha de Captura</th>
                     <th>Numero de Medalla</th>
                     <th>Campeon Actual</th>
                     <th>Acciones</th>
@@ -99,7 +107,7 @@
                             <%}%>
                         </td>
                         <td>
-                            <form action="/examen/antrenador/eliminar" method="post">
+                            <form action="/examen/entrenador/eliminar" method="post">
                                 <input type="text" name="entrenadorId" hidden value="<%=entrenador.entrenadorId%> ">
                                 <button type="submit" class="btn btn-xs btn-info">Borrar</button>
                                 <a href="http://localhost:3000/examen/entrenador/gestion/<%=entrenador.entrenadorId%>">

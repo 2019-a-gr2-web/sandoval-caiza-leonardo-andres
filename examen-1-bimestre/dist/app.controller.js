@@ -46,6 +46,13 @@ let AppController = class AppController {
                 listaEntrenador: listaEntrenador
             });
         }
+        else {
+            res.redirect('examen/login');
+        }
+    }
+    eliminarCookie(res, req) {
+        res.clearCookie('usuario');
+        res.redirect('/examen/login');
     }
 };
 __decorate([
@@ -80,6 +87,14 @@ __decorate([
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "gestion", null);
+__decorate([
+    common_1.Get('eliminarCookie'),
+    __param(0, common_1.Res()),
+    __param(1, common_1.Req()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", void 0)
+], AppController.prototype, "eliminarCookie", null);
 AppController = __decorate([
     common_1.Controller('/examen'),
     __metadata("design:paramtypes", [login_service_1.LoginService,

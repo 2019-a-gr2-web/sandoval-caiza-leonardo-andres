@@ -50,6 +50,9 @@ let EntrenadorController = class EntrenadorController {
                 listaEntrenador: listaEntrenador
             });
         }
+        else {
+            res.redirect('examen/login');
+        }
     }
 };
 __decorate([

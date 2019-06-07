@@ -1074,12 +1074,12 @@
         "signature": "0b2b8b41ff3dd5beccabd2310abc50ce70670d94899008e60705f1460863fcb5"
       },
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/entrenador/entrenador.service.ts": {
-        "version": "937f6783f1db9e30004be6b668a438314cc652d1221b1abef40bbe5bde12de6d",
+        "version": "5f2cba8a38f467eb9db5f10064ac6e7b56e77a8f1380d5bc6f09176ad59d43c2",
         "signature": "64f3e0019d1a55b9eaa4f7c9428969bd1f426484b00293e9724ae8b848e47e82"
       },
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/app.controller.ts": {
-        "version": "69fb020a190e7282dc3659b1cc36f764f7d4be81d46d94ff0703705ba60bfcfb",
-        "signature": "b66eb4a71662620dc95adfadd7a346f18c238130e51a240af32ae25a6f27d598"
+        "version": "1341f5fc934dd4e7d0489f1849b7b6ed384454b894ed454e77e748b407bf5175",
+        "signature": "3bb2ef8b2651674b55e11189ff632eb466f2b42928f1ce85b60f0db78499a366"
       },
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/app.service.ts": {
         "version": "eaf8514ce110fa428a93a27408df4d06d133dbd9ed0a775c315ddfdd507853a9",
@@ -1090,11 +1090,11 @@
         "signature": "9392ca8a28d0d0fd8771cd705d5846ae5b0ad9990da419493362d902e6a26c6b"
       },
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/pokemon/pokemon.service.ts": {
-        "version": "ac7f703c84135b34949be14bc8d05ea2e465d3c028be69c1f1cae96bafce98e5",
+        "version": "3feb91f03fe7c60747f6cfee7c17e7c4fcc51e271d88fb9450aa94f3d13e2361",
         "signature": "711bb3ee6b965ffc711991acef2de1235a1a0da7c783433d363179a1dce92144"
       },
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/pokemon/pokemon.controller.ts": {
-        "version": "344a678c3090464360911d57849e1cd51d4baec9805204f948d6004510cec8fd",
+        "version": "2c93e905fa9e3ee5382b9404b1994d7e83d60da803ad0c037ac509c8445435e0",
         "signature": "2788727b2046c1b69a8cb4bc63edf3df15a50db81c975e4aed0dfbab9b06ccc4"
       },
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/login/login.module.ts": {
@@ -1106,7 +1106,7 @@
         "signature": "820cbb388e842644a43fe64d05fa9cf124488754ae32f514276bf7e1c9a1c143"
       },
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/entrenador/entrenador.controller.ts": {
-        "version": "bbfd38afe00cfe57945c2c56d5ec4f748588ef50eab32f753989f90b40053d2f",
+        "version": "4adf9c9581c0c3159f171aa023a6e2567bf939e9ad03de2db9fa4eed9376addf",
         "signature": "a63da56f5748d7c6f9c3dd4557bdc3c20607b19ab37f5d41df809e6ad1c92465"
       },
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/entrenador/entrenador.module.ts": {
@@ -5594,13 +5594,13 @@
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/login/login.service.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/interfaces/entrenador.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/entrenador/entrenador.service.ts",
-      "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/app.controller.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/app.service.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/interfaces/pokemon.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/pokemon/pokemon.service.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/pokemon/pokemon.controller.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/login/login.module.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/pokemon/pokemon.module.ts",
+      "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/entrenador/entrenador.controller.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/entrenador/entrenador.module.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/app.module.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -5659,7 +5659,7 @@
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/node_modules/@types/json5/index.d.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/node_modules/@types/superagent/index.d.ts",
       "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/node_modules/@types/supertest/index.d.ts",
-      "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/entrenador/entrenador.controller.ts"
+      "c:/users/leos/documents/github/sandoval-caiza-leonardo-andres/examen-1-bimestre/src/app.controller.ts"
     ]
   },
   "version": "3.4.3"
