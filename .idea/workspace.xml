@@ -5,31 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb425ec-8fdf-4221-86dc-c2b8d7fa2ed4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/examen-1-bimestre/.idea/examen-1-bimestre.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/Entrenador/entrenador.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/Entrenador/entrenador.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/Entrenador/entrenador.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/Entrenador/entrenador.controller.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/Entrenador/entrenador.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/Entrenador/entrenador.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/Entrenador/entrenador.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/Entrenador/entrenador.service.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/Pokemon/pokemon.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/Pokemon/pokemon.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/Pokemon/pokemon.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/Pokemon/pokemon.controller.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/Pokemon/pokemon.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/Pokemon/pokemon.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/Pokemon/pokemon.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/Pokemon/pokemon.service.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/app.controller.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/app.controller.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/app.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/app.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/app.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/app.controller.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/src/Entrenador/entrenador.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/src/Entrenador/entrenador.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/src/Entrenador/entrenador.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/src/Entrenador/entrenador.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/crear.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/crear.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/inicio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/inicio.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/views/Login/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/views/Login/login.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/views/Pokemon/crear.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/views/Pokemon/crear.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/views/Pokemon/inicio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/views/Pokemon/inicio.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen-1-bimestre/views/inicio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/examen-1-bimestre/views/inicio.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.module.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,66 +24,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Entrenador/entrenador.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Login/login.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Login/login.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/crear.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/inicio.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
+            <state relative-caret-position="578">
               <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
             </state>
           </provider>
@@ -111,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Login/login.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="68">
               <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
@@ -120,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/app.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -133,9 +57,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.entity.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/interfaces/trago.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="3" selection-start-line="3" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/app.controller.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="238">
               <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
@@ -147,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
+            <state relative-caret-position="102">
               <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -173,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Deberes/02-cookie-segura/src/main.ts" />
         <option value="$PROJECT_DIR$/Deberes/02-cookie-insegura/src/main.ts" />
         <option value="$PROJECT_DIR$/Deberes/02-cookie-segura/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/main.ts" />
@@ -187,8 +167,6 @@
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/peliculas/estilos.ejs" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/service.ts" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/tragos/lista-trajos.ts" />
-        <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.module.ts" />
-        <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/interfaces/trago.ts" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.service.ts" />
         <option value="$PROJECT_DIR$/Deberes/03-pagina-web/publico/scripts/menu.css" />
@@ -224,6 +202,9 @@
         <option value="$PROJECT_DIR$/examen-1-bimestre/src/Entrenador/entrenador.controller.ts" />
         <option value="$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.controller.ts" />
         <option value="$PROJECT_DIR$/examen-1-bimestre/src/app.controller.ts" />
+        <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.module.ts" />
+        <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts" />
+        <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.entity.ts" />
       </list>
     </option>
   </component>
@@ -249,68 +230,55 @@
             <path>
               <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="api-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="api-web" type="462c0819:PsiDirectoryNode" />
+              <item name="publico" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="api-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="api-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entrenador" type="462c0819:PsiDirectoryNode" />
+              <item name="tragos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="01-http" type="462c0819:PsiDirectoryNode" />
+              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="api-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Pokemon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Entrenador" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandoval-caiza-leonardo-andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandoval-caiza-leonardo-andres" type="462c0819:PsiDirectoryNode" />
-              <item name="examen-1-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Pokemon" type="462c0819:PsiDirectoryNode" />
+              <item name="tragos" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,11 +388,12 @@
       <workItem from="1559521325600" duration="140000" />
       <workItem from="1559594876608" duration="5764000" />
       <workItem from="1559653263077" duration="4686000" />
+      <workItem from="1560369195465" duration="3211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183522000" />
+    <option name="totallyTimeSpent" value="186733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -441,7 +410,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28502417" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4283414" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -453,13 +422,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Deberes/03-pagina-web/publico/scripts/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="54" column="116" selection-start-line="54" selection-start-column="116" selection-end-line="54" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/peliculas/estilos.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4250">
@@ -561,16 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -578,13 +530,6 @@
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/interfaces/trago.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -610,16 +555,6 @@
             <element signature="e#0#42#0" expanded="true" />
             <element signature="n#!!block;n#buscarPorNombre#0;n#TragosService#0" />
             <element signature="n#!!block;n#actualizar#0;n#TragosService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,16 +591,6 @@
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -758,53 +683,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Login/login.service.ts">
+    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Entrenador/entrenador.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="1037">
+          <caret line="65" column="41" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="41" />
           <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/inicio.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/crear.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/app.controller.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Login/login.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="34">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
@@ -814,7 +705,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Login/login.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="119">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -822,9 +713,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/crear.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
+        <state relative-caret-position="782">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
             <element signature="e#0#76#0" expanded="true" />
@@ -832,12 +730,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Entrenador/entrenador.controller.ts">
+    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/views/Entrenador/inicio.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="41" />
+        <state relative-caret-position="578">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Login/login.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
-            <element signature="e#0#88#0" expanded="true" />
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/app.controller.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/Pokemon/pokemon.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -848,6 +773,53 @@
           <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding>
             <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examen-1-bimestre/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/interfaces/trago.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="3" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
