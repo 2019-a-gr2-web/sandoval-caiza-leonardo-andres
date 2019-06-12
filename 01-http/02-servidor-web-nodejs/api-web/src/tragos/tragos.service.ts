@@ -1,10 +1,15 @@
 import {Injectable} from "@nestjs/common";
 import {Trago} from "./interfaces/trago";
+import {InjectRepository} from "@nestjs/typeorm";
+import {TragosEntity} from "./tragos.entity";
+import {Repository} from "typeorm";
 
 @Injectable()
 export class TragosService {
 
-    constructor(){
+    constructor(@InjectRepository(TragosEntity)
+                private readonly _tragosRepository: Repository<TragosEntity>){
+
         const traguito:Trago = {
             nombre: 'Pilsener',
             gradosAlcohol: 4.3,
