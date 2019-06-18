@@ -7,28 +7,65 @@ import {Repository} from "typeorm";
 @Injectable()
 export class TragosService {
 
-    constructor(@InjectRepository(TragosEntity)
-                private readonly _tragosRepository: Repository<TragosEntity>){
-
-        const traguito:Trago = {
-            nombre: 'Pilsener',
-            gradosAlcohol: 4.3,
-            fechaCaducidad: new Date(2019,5,10),
-            precio: 1.75,
-            tipo:'Cerveza'
-        };
-        this.crear(traguito);
-    }
-
-
     bddTragos: Trago[] = [];
     recnum = 1;
 
-    crear(nuevoTrago: Trago):Trago {
+    constructor(@InjectRepository(TragosEntity)
+                private readonly _tragosRepository: Repository<TragosEntity>,){
+
+        const traguito:Trago = {
+            nombre:'Pilsener',
+            gradosAlcohol:4.3,
+            fechaCaducidad: new Date(2019,5,10),
+            precio:1.75,
+            tipo:'Cerveza'
+        };
+
+        const objetoEntidad = this._tragosRepository.create(traguito);
+
+        //linea 1
+        console.log('LINEA 1')
+        this._tragosRepository
+            .save(objetoEntidad)
+            .then(
+                (datos)=>{
+                    //linea 2
+                    console.log('LINEA 2')
+                    console.log('Dato creado:', datos);
+                }
+            )
+            .catch(
+                (error)=>{
+                    //linea 3
+                    console.log('LINEA 3')
+                    console.error('Error:', error);
+                }
+            );
+
+
+
+        console.log('LINEA 4')
+        //linea 4
+
+
+
+        this.crear(traguito);
+
+    }
+
+    buscar(parametrosBusqueda?):Promise<Trago[]>{
+        return this._tragosRepository.find(parametrosBusqueda);
+    }
+
+    crear(nuevoTrago: Trago):Promise<Trago> {
         nuevoTrago.id = this.recnum;
         this.recnum++;
         this.bddTragos.push(nuevoTrago);
-        return nuevoTrago;
+
+
+        const objetoEntidad = this._tragosRepository.create(nuevoTrago);
+        return this._tragosRepository.save(objetoEntidad);
+
     }
 
     buscarPorId(id: number):Trago {
