@@ -1,3 +1,9 @@
+
+<% const existeMensaje = mensaje %>
+<% if(existeMensaje){ %>
+<p>ERROR EN FORMULARIO!!</p>
+<% }%>
+
 <h1>Formulario de creacion</h1>
 <p>Crea un nuevo traho</p>
 
@@ -5,12 +11,13 @@
         action="/api/traguito/crear"
         method="post"
 >
-    <input id="id"
+  <!--  <input id="id"
            name="id"
            type="text"
            value="id"
     >
     <br>
+-->
 
     <label for="nombreId">Nombre</label>
     <input id="nombreId" name="nombre" type="text">
