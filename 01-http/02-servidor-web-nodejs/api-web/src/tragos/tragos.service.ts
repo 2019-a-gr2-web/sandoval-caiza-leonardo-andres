@@ -58,9 +58,9 @@ export class TragosService {
     }
 
     crear(nuevoTrago: Trago):Promise<Trago> {
-        nuevoTrago.id = this.recnum;
-        this.recnum++;
-        this.bddTragos.push(nuevoTrago);
+       // nuevoTrago.id = this.recnum;
+        //this.recnum++;
+        //this.bddTragos.push(nuevoTrago);
 
 
         const objetoEntidad = this._tragosRepository.create(nuevoTrago);
