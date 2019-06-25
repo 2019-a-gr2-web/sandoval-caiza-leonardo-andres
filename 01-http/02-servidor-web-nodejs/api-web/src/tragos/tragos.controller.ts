@@ -30,7 +30,8 @@ export class TragosController {
     ) {
         res.render('tragos/crear-editar',
             {
-                mensaje: mensaje}
+                mensaje: mensaje
+            }
                 )
     }
 
