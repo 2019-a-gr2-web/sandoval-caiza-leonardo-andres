@@ -1,5 +1,18 @@
 
-import {Controller, Delete, Get, HttpCode, Post, Put, Headers,Param,Request, Response} from '@nestjs/common';
+import {
+    Controller,
+    Delete,
+    Get,
+    HttpCode,
+    Post,
+    Put,
+    Headers,
+    Param,
+    Request,
+    Response,
+    Session,
+    Query, Res
+} from '@nestjs/common';
 
 import { AppService } from './app.service';
 import {Body} from "@nestjs/common/decorators/http/route-params.decorator";
@@ -92,6 +105,65 @@ export class AppController {
 
     }
   }
+
+    @Get('login')
+    loginVista(
+        @Res() res
+    ){
+        res.render('login');
+    }
+
+    @Post('login')
+    login(
+        @Body() usuario,
+        @Session() session,
+        @Res() res
+    ){
+      if(usuario.username === 'leonardo' && usuario.password === '12345'){
+            session.username = usuario.username
+            res.redirect('/api/protegida');
+      }else{
+          res.status(400);
+          res.send({mensaje:'Error login', error:400})
+      }
+    }
+
+    @Get('protegida')
+    protegida(
+        @Session() session,
+        @Res() res
+    ){
+        if(session.username){
+            res.render('/protegida',{
+                nombre:session.username});
+        }else{
+            res.redirect('/api/login');
+        }
+    }
+
+
+    @Get('logout')
+    logout(
+        @Res() res,
+        @Session() session,
+    ){
+        session.username = undefined;
+        session.destroy();
+        res.redirect('/api/login');
+    }
+
+    @Get('session')
+    session(
+        @Query('nombre') nombre,
+        @Session() session
+    ){
+        console.log(session);
+
+        session.autenticado = true;
+        session.nombreUsuario = nombre;
+        return 'ok';
+
+    }
 
   @Get('/semilla')
   semilla(@Request() request,
