@@ -36,6 +36,13 @@
         }
     )
 
+    socket.on(
+        'saludaron', //nombre del evento
+        (data)=>{
+            console.log('Nos saludaron. !',data);
+        }
+    )
+
     function peticionHolaMundo() {
        const nombreMetodo='holaMundo';
        const datos={
