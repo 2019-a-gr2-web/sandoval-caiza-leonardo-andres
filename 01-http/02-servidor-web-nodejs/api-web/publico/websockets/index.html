@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSockets</title>
+</head>
+<body>
+
+<!-- <script src="socket.io.js"></script> -->
+
+<script src="/websockets/socket.io.js"> </script>
+<script>
+    const url='http://localhost:3001/websockets';
+    const socket=io(url);
+    console.log('Ya mismito nos conectamos =) ');
+
+   socket.on(
+        'connect', //nombre del evento
+        ()=>{
+            console.log('Estamos conectados!!!');
+            /*
+            socket.disconnect(); // para desconectar
+              setTimeout(  // para volver a conectar cada 3 segundos
+                  ()=>{
+                      socket.connect();
+                  },3000
+              )
+            */
+          }
+      )
+
+    socket.on(
+        'disconnect', //nombre del evento
+        ()=>{
+            console.log('Nos desconectamos !');
+        }
+    )
+
+    function peticionHolaMundo() {
+       const nombreMetodo='holaMundo';
+       const datos={
+           nombre:'Leonardo'
+       };
+       socket.emit(
+           nombreMetodo,
+           datos,
+           (respuesta)=>{ //callback Respuesta que da el servidor
+               console.log(respuesta);
+           }
+        );
+    }
+
+</script>
+
+</body>
+</html>
