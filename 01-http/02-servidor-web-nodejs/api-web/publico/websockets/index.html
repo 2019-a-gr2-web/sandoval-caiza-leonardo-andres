@@ -3,8 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>WebSockets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
 <body>
+
+<h1 id="titulo">CHAT EPN</h1>
+<p class="par" >Primero</p>
+<p class="par" >Segundo</p>
+
+<div id="contenedor-chat">
+
+
+</div>
+
+<label for="chat-texto">TEXTO</label>
+<input id="chat-texto" type="text">
+
+<button onclick="enviarMensaje()">Añadir chat</button>
+
+<script>
+    const titulo=document.getElementById('titulo');
+    titulo.style.backgroundColor='green';
+    titulo.onclick = () => {
+        console.log('Diste click al titulo');
+    };
+
+    function clicParrafo(){
+        alert('CUIDADO !!');
+    }
+
+    function enviarMensaje() {
+        const chatTexto=document.getElementById("chat-texto");
+        const texto = chatTexto.value;
+        console.log(texto);
+
+        const idContenedor='contenedor-chat';
+
+        const nombreEtiquetaHTMLChat="p";
+        const parrafo=document
+            .createElement(nombreEtiquetaHTMLChat);
+
+        const contenidoHTML = `
+            <div class="alert alert-primary text-right" role="alert">
+            ${texto}
+            </div>
+        `;
+
+        parrafo.innerHTML=contenidoHTML;
+        anadirEtiqueta(idContenedor,parrafo);
+        peticionHolaMundo(texto);
+
+        chatTexto.value="";
+        //chatTexto.focus();
+        //parrafo.innerText=texto;
+        //anadirEtiqueta(idContenedor,parrafo);
+
+    }
+
+    function anadirEtiqueta(idEtiqueta, elementoHTML) {
+        const etiqueta = document.getElementById(idEtiqueta);
+        etiqueta.appendChild(elementoHTML);
+    }
+
+</script>
+
 
 <!-- <script src="socket.io.js"></script> -->
 
@@ -40,13 +104,29 @@
         'saludaron', //nombre del evento
         (data)=>{
             console.log('Nos saludaron. !',data);
+
+            const nombreContenedor='contenedor-chat';
+            const idContenedor= document.getElementById('contenedor-chat');
+
+            const nombreEtiqueta='p';
+            const parrafo=document
+                .createElement(nombreEtiqueta);
+
+            const HTMLParrafo = `
+            <div class="alert alert-secondary" role="alert">
+            ${data.nombre}
+            </div>
+        `;
+            parrafo.innerHTML=HTMLParrafo;
+            anadirEtiqueta(nombreContenedor,parrafo);
+
         }
     )
 
-    function peticionHolaMundo() {
+    function peticionHolaMundo(texto) {
        const nombreMetodo='holaMundo';
        const datos={
-           nombre:'Leonardo'
+           nombre:texto
        };
        socket.emit(
            nombreMetodo,
@@ -58,6 +138,8 @@
     }
 
 </script>
+
+
 
 </body>
 </html>
