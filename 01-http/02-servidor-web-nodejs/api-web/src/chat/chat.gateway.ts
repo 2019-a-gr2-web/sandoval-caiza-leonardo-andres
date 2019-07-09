@@ -16,9 +16,10 @@ export class ChatGateway {
 
 
     @SubscribeMessage('holaMundo')
-    holaMundo(client: Client, data:any){
+    holaMundo(client: Client| any, data:any){
         console.log(data);
         console.log('Nos hacen la peticion');
+        client.broadcast.emit('saludaron',data);
         return 'Hola '+data.nombre;
     }
 }
