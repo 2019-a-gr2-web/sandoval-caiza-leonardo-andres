@@ -11,13 +11,14 @@ import {
     Request,
     Response,
     Session,
-    Query, Res
+    Query, Res, Render, UseInterceptors, UploadedFile
 } from '@nestjs/common';
 
 import { AppService } from './app.service';
 import {Body} from "@nestjs/common/decorators/http/route-params.decorator";
 
 import * as Joi from '@hapi/joi';
+import {FileInterceptor} from "@nestjs/platform-express";
 
 
 //http://192.168.1.10:3000/segmentoInicial
@@ -28,6 +29,46 @@ import * as Joi from '@hapi/joi';
 @Controller('/api')
 export class AppController {
   constructor(private readonly appService: AppService) {}
+
+  @Get('/subirArchivo/:idTrago')
+  @Render('archivo')
+  subirArchivo(
+      @Param('idTrago') idTrago
+  ){
+        return{
+            idTrago: idTrago
+        };
+  }
+
+  @Post('subirArchivo/:idTrago')
+  @UseInterceptors(
+      FileInterceptor(
+          'imagen',
+          {
+              dest: __dirname + '/../archivos'
+
+          }
+          )
+  )
+  subirArchivoPost(
+      @Param('idTrago')idTrago,
+      @UploadedFile() archivo
+      ){
+
+      console.log(archivo);
+      return { mensaje: 'ok'}
+
+  }
+
+    @Get('descargarArchivo/:idTrago')
+    descargarArchivo(
+        @Res() res,
+        @Param('idTrago') idTrago
+    ){
+        const originalname= 'partes.jpg';
+        const path = 'C:\\Users\\LeoS\\Documents\\GitHub\\sandoval-caiza-leonardo-andres\\01-http\\02-servidor-web-nodejs\\api-web\\archivos\\5b62473b495eb815ca6df512aef5e20b';
+        res.download(path,originalname);
+    }
 
   //@Controller(va a recibir como parametro el segmentoAccion)
   @Get('/hello-world')// METODO HTTP
