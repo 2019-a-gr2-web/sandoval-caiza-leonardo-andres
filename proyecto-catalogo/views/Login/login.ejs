@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Proyecto</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .espacio{
+            height: 150px;
+        }
+    .col-sm-12{
+        text-align: center;
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow: hidden;
+        background-color: #c0e0df;
+    }
+        .btn{
+            color: #060101;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border-bottom-color: #9D1D1A;
+            border-color: #0c0303;
+            background-color: #f3948e;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="espacio"></div>
+            <h1>CATÁLOGO</h1>
+            <div class="espacio"></div>
+
+            <form action="/examen/ingresar" method="post">
+                <label for="inputNombre">Usuario:</label>
+                <input type="text" id="inputNombre" name="usuario">
+                <br>
+                <button class="btn">Ingresar</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
