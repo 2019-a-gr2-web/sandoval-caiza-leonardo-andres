@@ -8,23 +8,27 @@
 
     <title>Proyecto</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        .espacio{
+        .espacio {
             height: 150px;
         }
-    .col-sm-12{
-        text-align: center;
-    }
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        font-family: Helvetica, Arial, sans-serif;
-        overflow: hidden;
-        background-color: #c0e0df;
-    }
-        .btn{
+
+        .col-sm-12 {
+            text-align: center;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            background-color: #e0cac1;
+        }
+
+        .btn {
             color: #060101;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -34,21 +38,36 @@
         }
     </style>
 </head>
+
 <body>
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
 
-            <div class="espacio"></div>
             <h1>CATÁLOGO</h1>
-            <div class="espacio"></div>
 
-            <form action="/examen/ingresar" method="post">
-                <label for="inputNombre">Usuario:</label>
-                <input type="text" id="inputNombre" name="usuario">
-                <br>
-                <button class="btn">Ingresar</button>
-            </form>
+            <img src="/partes.jpg" alt="Partes de Computadoras" height="242" width="442">
+
+            <h2>Inicio de sesion</h2>
+            
+
+            <div class="card-body" align="center">
+                <form action="/examen/ingresar" method="post">
+                    <div class="form-group" align="center">
+                        <label for="inputNombre">Usuario: </label>
+                        <br>
+                        <input type="text" id="inputNombre" name="usuario">
+                    </div>
+
+                    <div class="form-group" align="center">
+                        <label for="inputPassword">Contraseña:</label>
+                        <br>
+                        <input type="password" id="inputPassword" name="password">
+                    </div>
+                    <button class="btn">Ingresar</button>
+                </form>
+            </div>
+
 
         </div>
     </div>
