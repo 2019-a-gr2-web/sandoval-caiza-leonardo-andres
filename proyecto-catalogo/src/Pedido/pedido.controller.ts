@@ -1,17 +1,13 @@
-import {Controller, Post, Body, Res, Session, Query, Req, Get} from "@nestjs/common";
-import {LoginService} from "../Login/login.service";
-import {PedidoService} from "./pedido.service";
-import {UsuarioService} from "../Usuario/usuario.service";
-import {PedidoEntity} from "./pedido.entity";
-import {UsuarioEntity} from "../Usuario/usuario.entity";
-import {stringify} from "querystring";
-import * as e from "express";
-import {DetalleService} from "../Detalle/detalle.service";
+import {Controller, Post, Body, Res, Session, Query, Req, Get} from '@nestjs/common';
+import {LoginService} from '../Login/login.service';
+import {PedidoService} from './pedido.service';
+import {UsuarioService} from '../Usuario/usuario.service';
+import {DetalleService} from '../Detalle/detalle.service';
 
 @Controller('api/pedido')
 export class PedidoController {
     constructor(private readonly _pedidoService: PedidoService, private readonly _loginService: LoginService,
-                private readonly _usuarioService:UsuarioService,private readonly _detalleService:DetalleService) {
+                private readonly _usuarioService: UsuarioService, private readonly _detalleService: DetalleService) {
 
     }
 
@@ -20,21 +16,21 @@ export class PedidoController {
         @Body() body,
         @Res() res,
         @Session() session,
-    ){
-        const usuario=await this._usuarioService.buscarUsuarioPorNombre(body.usuarioNombre)
-        //console.log(usuario.usuarioId);
-        //const id=usuario.usuarioId;
+    ) {
+        const usuario = await this._usuarioService.buscarUsuarioPorNombre(body.usuarioNombre);
+        // console.log(usuario.usuarioId);
+        // const id=usuario.usuarioId;
 
         try {
 
-            const respuestaCrear=await this._pedidoService.crearPedido(usuario.usuarioId,usuario.nombreUsuario,usuario.direccion,usuario.telefono,usuario.cedula);
+            const respuestaCrear = await this._pedidoService.crearPedido(usuario.usuarioId, usuario.nombreUsuario, usuario.direccion, usuario.telefono, usuario.cedula);
             console.log(respuestaCrear.pedidoId);
-            //return respuestaCrear.pedidoId;
-            const pedido=respuestaCrear.pedidoId;
-            res.redirect('/api/menu?pedido='+pedido);
+            // return respuestaCrear.pedidoId;
+            const pedido = respuestaCrear.pedidoId;
+            res.redirect('/api/menu?pedido=' + pedido);
 
-        }catch (e) {
-            console.log(e)
+        } catch (e) {
+            console.log(e);
         }
     }
 
@@ -44,20 +40,20 @@ export class PedidoController {
         @Body() body,
         @Res() res,
         @Req() req,
-        @Session() session
-    ){
+        @Session() session,
+    ) {
 
         try {
-            const respuestaDetalle=await this._detalleService.crearDetalle(req.params.pedido,body.peliculaId);
-            const listaDetalle=await this._detalleService.listarDetalle(req.params.pedido);
+            const respuestaDetalle = await this._detalleService.crearDetalle(req.params.pedido, body.productoId);
+            const listaDetalle = await this._detalleService.listarDetalle(req.params.pedido);
             console.log(listaDetalle.length);
-            const subTotal=listaDetalle.length;
-            const total=subTotal*(0.12)+subTotal;
-            const pedidoActualizado=await this._pedidoService.modificarPedido(req.params.pedido,subTotal,total);
+            const subTotal = listaDetalle.length;
+            const total = subTotal * (0.12) + subTotal;
+            const pedidoActualizado = await this._pedidoService.modificarPedido(req.params.pedido, subTotal, total);
 
-            res.redirect('/api/menu?pedido='+req.params.pedido);
+            res.redirect('/api/menu?pedido=' + req.params.pedido);
 
-        }catch (e) {
+        } catch (e) {
 
         }
     }
@@ -67,20 +63,19 @@ export class PedidoController {
         @Res() res,
         @Req() req,
         @Query() query,
-        @Session() session
-    ){
+        @Session() session,
+    ) {
         console.log(session.username);
 
-
         try {
-            const usuario=await this._usuarioService.buscarUsuarioPorNombre(session.username);
-            const listaPedidos=await this._pedidoService.listarPedidosUsuario(usuario.usuarioId);
-            console.log(listaPedidos)
-            res.render('Usuario/pedidos.ejs',{
-                usuario:session.username,
-                listaPedidos:listaPedidos,
-            })
-        }catch (e) {
+            const usuario = await this._usuarioService.buscarUsuarioPorNombre(session.username);
+            const listaPedidos = await this._pedidoService.listarPedidosUsuario(usuario.usuarioId);
+            console.log(listaPedidos);
+            res.render('Usuario/pedidos.ejs', {
+                usuario: session.username,
+                listaPedidos,
+            });
+        } catch (e) {
 
         }
     }
@@ -89,13 +84,13 @@ export class PedidoController {
     async confirmarPedido(
         @Body() body,
         @Session() session,
-        @Res() res
-    ){
-        try{
-            const respuestaEditado=await this._pedidoService.editarEstado(body.pedidoId,2);
+        @Res() res,
+    ) {
+        try {
+            const respuestaEditado = await this._pedidoService.editarEstado(body.pedidoId, 2);
             res.redirect('/api/pedido/lista-pedido-usuario');
-        }catch (e) {
-            console.log(e)
+        } catch (e) {
+            console.log(e);
         }
 
     }
@@ -105,12 +100,12 @@ export class PedidoController {
         @Body() body,
         @Session() session,
         @Res() res,
-    ){
+    ) {
         try {
-            const respuestaEditado=await this._pedidoService.editarEstado(body.pedidoId,0);
+            const respuestaEditado = await this._pedidoService.editarEstado(body.pedidoId, 0);
             res.redirect('/api/pedido/lista-pedido-usuario');
-        }catch (e) {
-            console.log(e)
+        } catch (e) {
+            console.log(e);
         }
 
     }

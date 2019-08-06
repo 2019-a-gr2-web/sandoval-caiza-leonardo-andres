@@ -11,7 +11,7 @@ export  class DetalleEntity {
 
     @ManyToOne(type => ProductoEntity,
         producto=> producto.detalles)
-    peliculaId:ProductoEntity;
+    productoId:ProductoEntity;
 
     @ManyToOne(type => PedidoEntity,
         pedido=> pedido.detalles)

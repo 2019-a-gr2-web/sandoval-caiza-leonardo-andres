@@ -2,7 +2,7 @@ import {Injectable} from "@nestjs/common";
 import {UsuarioEntity} from "./usuario.entity";
 import {Repository} from "typeorm";
 import {InjectRepository} from "@nestjs/typeorm";
-import {ProductoEntity} from "../Producto/producto.entity";
+
 
 @Injectable()
 export class UsuarioService {
@@ -19,7 +19,7 @@ export class UsuarioService {
         });
     }
 
-    buscarUsuarioPorNombre(nombreUsuario?):Promise<UsuarioEntity> {
+    buscarUsuarioPorNombre(nombreUsuario?): Promise<UsuarioEntity> {
         return this._usuarioRepository.findOne({
             nombreUsuario: nombreUsuario
         });

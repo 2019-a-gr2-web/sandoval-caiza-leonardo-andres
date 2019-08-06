@@ -17,9 +17,9 @@ export class DetalleService {
         });
     }
 
-    crearDetalle(pedidoId?,peliculaId?):Promise<DetalleEntity>{
+    crearDetalle(pedidoId?,productoId?):Promise<DetalleEntity>{
         const objetoEntidad = this._detalleRepository
-            .create({pedidoId:pedidoId,peliculaId:peliculaId
+            .create({pedidoId:pedidoId,productoId:productoId,
             });
 
         return this._detalleRepository.save(objetoEntidad);

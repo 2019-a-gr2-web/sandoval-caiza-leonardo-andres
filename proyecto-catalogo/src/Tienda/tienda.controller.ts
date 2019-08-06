@@ -5,7 +5,7 @@ import {LoginService} from "../Login/login.service";
 @Controller('api/padre')
 
 export class TiendaController {
-    constructor(private readonly _actorServices:TiendaService, private readonly _loginService:LoginService){
+    constructor(private readonly _tiendaServices:TiendaService, private readonly _loginService:LoginService){
 
     }
 
